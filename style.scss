@@ -1,0 +1,44 @@
+$midnight-blue: #004384;
+$dark-midnight-blue: #003e5f;
+$blue-green: #1593A5;
+$cornflower: #96cfea;
+
+.midnight-blue{
+  background-color: $midnight-blue
+}
+.dark-midnight-blue{
+  background-color: $dark-midnight-blue
+}
+.blue-green{
+  background-color: $blue-green
+}
+.cornflower{
+  background-color: $cornflower
+}
+
+.brand-logo{
+  margin-left: 1.5rem;
+}
+
+.img{
+  width: 100%;
+}
+
+.valor{
+  display: grid;
+  gap: 10px;
+  @media (max-width:600px) {
+    grid-template-columns: repeat(1 1fr);
+  }
+  @media (min-width:600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.valor-margin{
+  margin: auto 10px !important;
+}
+.image-valor-margin{
+  margin: auto;
+}
+
+@import 'node_modules/materialize-css/sass/materialize.scss';

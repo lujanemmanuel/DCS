@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCS | Inicio</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lib/owl/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="lib/owl/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper midnight-blue">
+        <a href="#" class="brand-logo">
+          <img src="assets/logo-white.png" alt="" width="70">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="about-us.html">Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="products.html">Productos</a></li>
+          <li><a href="sectors.html">Sectores</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li class="active"><a href="index.html">Inicio</a></li>
+    <li><a href="about-us.html">Nosotros</a></li>
+    <li><a href="services.html">Servicios</a></li>
+    <li><a href="products.html">Productos</a></li>
+    <li><a href="sectors.html">Sectores</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+  <section>
+    <div class="owl-carousel owl-theme">
+      <a class="item"><img
+          src="https://cdn.ttgtmedia.com/visuals/German/article/industry-factory-robots-adobe.jpg" /></a>
+      <a class="item"><img src="https://arbquin.com.co/wp-content/uploads/2019/06/Imagen10-1200x400.jpg" /></a>
+      <a class="item"><img src="https://www.cdt.cl/wp-content/uploads/2021/06/digital-twin-IIoT-2-adobe.jpg" /></a>
+    </div>
+  </section>
+  <script src="lib/jquery.min.js"></script>
+  <script src="materialize.min.js"></script>
+  
+  <script src="lib/owl/owl.carousel.min.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      margin: 10,
+      nav: false,
+      items: 1,
+    });
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+  </script>
+</body>
+
+</html>
