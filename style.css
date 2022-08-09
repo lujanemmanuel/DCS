@@ -1,22 +1,58 @@
 @charset "UTF-8";
 .midnight-blue {
-  background-color: #004384;
+  background-color: #004384 !important;
 }
 
 .dark-midnight-blue {
-  background-color: #003e5f;
+  background-color: #003e5f !important;
 }
 
 .blue-green {
-  background-color: #1593A5;
+  background-color: #1593a5 !important;
 }
 
 .cornflower {
-  background-color: #96cfea;
+  background-color: #96cfea !important;
 }
 
-.brand-logo {
-  margin-left: 1.5rem;
+::-webkit-scrollbar {
+  width: 5px; /* Tamaño del scroll en vertical */
+  height: 5px; /* Tamaño del scroll en horizontal */
+  background-color: #263238;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfd8dc;
+  border-radius: 3px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cfd8dc;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+  background-color: #cfd8dc;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.container::-webkit-scrollbar-track {
+  background: #263238;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+  background: #263238;
+}
+
+@media (min-width: 992px) {
+  .brand-logo {
+    margin-left: 1.5rem;
+  }
 }
 
 .img {
@@ -44,6 +80,106 @@
 
 .image-valor-margin {
   margin: auto;
+}
+
+nav ul a {
+  color: black !important;
+}
+
+.construction {
+  height: calc(100vh - 64px);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-construction {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .ord-1 {
+    order: 1;
+  }
+  .ord-2 {
+    order: 2;
+  }
+}
+.services-section {
+  background: linear-gradient(#1593a5, #1593a5 50%, #fff 50%, #fff 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.flex-cont {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5rem;
+}
+.flex-cont .box-content {
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  background: linear-gradient(hsla(0deg, 0%, 0%, 0), hsla(20deg, 0%, 0%, 0.3) 20%, hsla(0deg, 0%, 0%, 0.8));
+}
+.flex-cont .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  background-image: url("assets/image/image1.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3rem 0 0;
+  max-width: 35ch;
+  overflow-y: hidden;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease;
+}
+.flex-cont .box:hover {
+  transform: scale(1.1);
+}
+.flex-cont .box:hover .box-title::after {
+  transform: scaleX(1);
+}
+.flex-cont .box:hover .box-content {
+  transform: translateY(0);
+}
+.flex-cont .box .box-title {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  padding-bottom: 0.1rem;
+}
+.flex-cont .box .box-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #004384;
+  width: calc(100% + 1.5rem);
+  left: -1.5rem;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.flex-cont .box .box-body {
+  overflow-y: scroll;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.cs-ul {
+  padding-left: 2rem !important;
+  list-style-type: disc !important;
+}
+.cs-ul li {
+  list-style-type: circle !important;
 }
 
 .materialize-red {

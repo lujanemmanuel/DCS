@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCS | Productos</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lib/owl/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="lib/owl/assets/owl.theme.default.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <!-- Services Structure -->
+      <ul id="services" class="dropdown-content">
+        <li><a href="services.html#one">one</a></li>
+        <li><a href="services.html#two">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper cornflower black-text">
+          <a href="#" class="brand-logo">
+            <img src="assets/logo-1.png" alt="" width="70" />
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a class="dropdown-trigger" data-target="services">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="products.html">Productos</a></li>
+            <li><a href="sectors.html">Sectores</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about-us.html">Nosotros</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li class="active"><a href="products.html">Productos</a></li>
+      <li><a href="sectors.html">Sectores</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <section>
+      <div class="container construction">
+        <div class="img-construction">
+          <img
+            src="assets/image/underconstruction.jpg"
+            alt="Sitio en construcción"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="materialize.min.js"></script>
+
+    <script src="lib/owl/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+  </body>
+</html>
