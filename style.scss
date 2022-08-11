@@ -270,4 +270,10 @@ nav ul a {
 #sectors-dropdown{
   width: max-content !important;
 }
+@media only screen and (max-width: 992px){
+  nav .brand-logo{
+    margin-top: 0.4rem;
+  }
+}
+
 @import "node_modules/materialize-css/sass/materialize.scss";
