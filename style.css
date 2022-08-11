@@ -122,12 +122,26 @@ nav ul a {
 .flex-cont {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 5rem;
 }
 .flex-cont .box-content {
   padding: 1.5rem 1rem 1.5rem 1.5rem;
   background: linear-gradient(hsla(0deg, 0%, 0%, 0), hsla(20deg, 0%, 0%, 0.5) 30%, hsl(0deg, 0%, 0%));
+}
+@media (max-width: 670px) {
+  .flex-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 670px) and (max-width: 1390px) {
+  .flex-cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1390px) {
+  .flex-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .flex-cont .box {
   display: flex;
@@ -141,6 +155,8 @@ nav ul a {
   overflow-y: hidden;
   border-radius: 0.5rem;
   transition: transform 500ms ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex-cont .box:hover {
   transform: scale(1.1);

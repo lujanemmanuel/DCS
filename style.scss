@@ -122,7 +122,6 @@ nav ul a {
 .flex-cont {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 5rem;
   .box-content {
     padding: $box-padding 1rem $box-padding $box-padding;
@@ -132,6 +131,15 @@ nav ul a {
       hsl(0 0% 0% /1)
     );
     // transform: translateY(78%);
+  }
+  @media (max-width:670px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width:670px) and (max-width:1390px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width:1390px) {
+    grid-template-columns: repeat(3, 1fr);
   }
   .box {
     display: flex;
@@ -145,6 +153,8 @@ nav ul a {
     overflow-y: hidden;
     border-radius: 0.5rem;
     transition: transform 500ms ease;
+    margin-left: auto;
+    margin-right: auto;
     &:hover {
       transform: scale(1.1);
       .box-title::after {
