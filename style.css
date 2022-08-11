@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html, body {
+  font-family: "Lato", sans-serif;
+}
+
 .midnight-blue {
   background-color: #004384 !important;
 }
@@ -109,7 +114,6 @@ nav ul a {
   }
 }
 .services-section {
-  background: linear-gradient(#1593a5, #1593a5 50%, #fff 50%, #fff 100%);
   background-attachment: fixed;
   min-height: 100vh;
   padding-bottom: 5rem;
@@ -123,16 +127,15 @@ nav ul a {
 }
 .flex-cont .box-content {
   padding: 1.5rem 1rem 1.5rem 1.5rem;
-  background: linear-gradient(hsla(0deg, 0%, 0%, 0), hsla(20deg, 0%, 0%, 0.3) 20%, hsla(0deg, 0%, 0%, 0.8));
+  background: linear-gradient(hsla(0deg, 0%, 0%, 0), hsla(20deg, 0%, 0%, 0.5) 30%, hsl(0deg, 0%, 0%));
 }
 .flex-cont .box {
   display: flex;
   flex-direction: column;
   justify-content: end;
   color: white;
-  background-image: url("assets/image/image1.png");
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 3rem 0 0;
   max-width: 35ch;
   overflow-y: hidden;
@@ -173,6 +176,27 @@ nav ul a {
   line-clamp: 10;
   -webkit-box-orient: vertical;
 }
+.flex-cont .box1 {
+  background-image: url("https://www.upiic.ipn.mx/assets/files/upiic/img//ProgramaAcademico/sistema-mecanico.jpg");
+}
+.flex-cont .box2 {
+  background-image: url("https://www.autycom.com/wp-content/uploads/2019/06/programacion-plc-2.jpg");
+}
+.flex-cont .box3 {
+  background-image: url("https://www.infoplc.net/media/k2/items/cache/ca0ff09b709c98bdffbae155a7b69d0b_XL.jpg");
+}
+.flex-cont .box4 {
+  background-image: url("https://isk.com.mx/wp-content/uploads/2019/11/CONSTRUCCION-DE-TABLEROS-ELECTRICOS.jpeg");
+}
+.flex-cont .box5 {
+  background-image: url("https://www.cablesyconectoreshoy.com/imagenes/2016/03/Brady-labelled-cables.jpg");
+}
+.flex-cont .box6 {
+  background-image: url("https://img77.uenicdn.com/image/upload/v1592563639/business/d204f992-6676-48eb-978e-1476687420cf.jpg");
+}
+.flex-cont .box7 {
+  background-image: url("https://concepto.de/wp-content/uploads/2021/06/mantenimiento-correctivo-preventivo-e1622737424937.jpg");
+}
 
 .cs-ul {
   padding-left: 2rem !important;
@@ -180,6 +204,13 @@ nav ul a {
 }
 .cs-ul li {
   list-style-type: circle !important;
+}
+
+.products .card span.card-title.activator {
+  min-height: 64px;
+}
+.products .card span.card-title.activator i {
+  position: absolute;
 }
 
 .materialize-red {
