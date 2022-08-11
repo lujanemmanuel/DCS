@@ -8,23 +8,37 @@
   <title>DCS | Inicio</title>
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="lib/owl/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="lib/owl/assets/owl.theme.default.min.css" />
 </head>
 
 <body>
+  <ul id="sectors-dropdown" class="dropdown-content">
+    <li><a href="sectors.html#alimenticio">Alimenticio</a></li>
+    <li><a href="sectors.html#farmaceutico">Farmaceutico</a></li>
+    <li><a href="sectors.html#agroindustria">Agroindustria</a></li>
+    <li><a href="sectors.html#Metalmecanica">Metalmecanica</a></li>
+    <li><a href="sectors.html#automotriz">Automotriz</a></li>
+    <li><a href="sectors.html#edificios">Automatización de edificios</a></li>
+  </ul>
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper cornflower black-text">
         <a href="#" class="brand-logo">
           <img src="assets/logo-1.png" alt="" width="70">
         </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="active"><a href="index.html">Inicio</a></li>
           <li><a href="about-us.html">Nosotros</a></li>
           <li><a href="services.html">Servicios</a></li>
+          <li><a href="proyects.html">Proyectos</a></li>
           <li><a href="products.html">Productos</a></li>
-          <li><a href="sectors.html">Sectores</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="sectors-dropdown">Sectores<i class="material-icons right" style="padding-right: 1rem">arrow_drop_down</i></a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
       </div>
@@ -34,17 +48,18 @@
     <li class="active"><a href="index.html">Inicio</a></li>
     <li><a href="about-us.html">Nosotros</a></li>
     <li><a href="services.html">Servicios</a></li>
+    <li><a href="proyects.html">Proyectos</a></li>
     <li><a href="products.html">Productos</a></li>
-    <li><a href="sectors.html">Sectores</a></li>
+    <li><a class="dropdown-trigger" id="dropdown-mobile" href="#!" data-target="sectors-dropdown">Sectores<i class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="contact.html">Contacto</a></li>
   </ul>
   
   <script src="lib/jquery.min.js"></script>
   <script src="materialize.min.js"></script>
-  
   <script src="lib/owl/owl.carousel.min.js"></script>
   <script>
       $(document).ready(function () {
+        $(".dropdown-trigger").dropdown();
         $(".sidenav").sidenav();
       });
   </script>

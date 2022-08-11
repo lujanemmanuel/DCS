@@ -7,35 +7,59 @@
     <title>DCS | Sectores</title>
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="lib/owl/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="lib/owl/assets/owl.theme.default.min.css" />
   </head>
 
   <body>
+    <ul id="sectors-dropdown" class="dropdown-content">
+      <li><a href="sectors.html#alimenticio"><i class="fa-solid fa-utensils"></i> Alimenticio</a></li>
+      <li><a href="sectors.html#farmaceutico"><i class="fa-solid fa-pills"></i> Farmaceutico</a></li>
+      <li><a href="sectors.html#agroindustria"><i class="fa-solid fa-seedling"></i> Agroindustria</a></li>
+      <li><a href="sectors.html#Metalmecanica"><i class="fa-solid fa-toolbox"></i> Metalmecanica</a></li>
+      <li><a href="sectors.html#automotriz"><i class="fa-solid fa-car"></i> Automotriz</a></li>
+      <li><a href="sectors.html#edificios"><i class="fa-solid fa-building-circle-check"></i> Automatización de edificios</a></li>
+    </ul>
+    <ul id="sectors-dropdown-mobile" class="dropdown-content dark-midnight-blue">
+      <li><a class="white-text" href="sectors.html#alimenticio"><i class="fa-solid fa-utensils"></i> Alimenticio</a></li>
+      <li><a class="white-text" href="sectors.html#farmaceutico"><i class="fa-solid fa-pills"></i> Farmaceutico</a></li>
+      <li><a class="white-text" href="sectors.html#agroindustria"><i class="fa-solid fa-seedling"></i> Agroindustria</a></li>
+      <li><a class="white-text" href="sectors.html#Metalmecanica"><i class="fa-solid fa-toolbox"></i> Metalmecanica</a></li>
+      <li><a class="white-text" href="sectors.html#automotriz"><i class="fa-solid fa-car"></i> Automotriz</a></li>
+      <li><a class="white-text" href="sectors.html#edificios"><i class="fa-solid fa-building-circle-check"></i> Automatización de edificios</a></li>
+    </ul>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper cornflower black-text">
           <a href="#" class="brand-logo">
-            <img src="assets/logo-1.png" alt="" width="70" />
+            <img src="assets/logo-1.png" alt="" width="70">
           </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about-us.html">Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="products.html">Productos</a></li>
-            <li class="active"><a href="sectors.html">Sectores</a></li>
-            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="about-us.html"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-people-carry-box"></i> Servicios</a></li>
+            <li><a href="proyects.html"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Productos</a></li>
+            <li class="active"><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="sectors-dropdown"><i class="fa-solid fa-industry"></i> Sectores <i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-file-signature"></i> Contacto</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="about-us.html">Nosotros</a></li>
-      <li><a href="services.html">Servicios</a></li>
-      <li><a href="products.html">Productos</a></li>
-      <li class="active"><a href="sectors.html">Sectores</a></li>
-      <li><a href="contact.html">Contacto</a></li>
+    <ul class="sidenav midnight-blue" id="mobile-demo">
+      <li><a class="white-text" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+      <li><a class="white-text" href="about-us.html"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
+      <li><a class="white-text" href="services.html"><i class="fa-solid fa-people-carry-box"></i> Servicios</a></li>
+      <li><a class="white-text" href="proyects.html"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+      <li><a class="white-text" href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Productos</a></li>
+      <li class="active"><a class="dropdown-trigger white-text" id="dropdown-mobile" href="#!" data-target="sectors-dropdown-mobile"><i class="fa-solid fa-industry"></i> Sectores <i class="fa-solid fa-caret-down"></i></a></li>
+      <li><a class="white-text" href="contact.html"><i class="fa-solid fa-file-signature"></i> Contacto</a></li>
     </ul>
 
     <div id="alimenticio" class="section white">
@@ -75,7 +99,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://www.somosindustria.com/media/img/socials/1200_gen_02_22_1J7KDWe.jpg"
+          src="https://images.pexels.com/photos/2889093/pexels-photo-2889093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         />
       </div>
     </div>
@@ -84,14 +108,32 @@
       <div class="row container">
         <h2 class="header">Sector farmacéutico</h2>
         <ul class="cs-ul">
-          <li>Generación, almacenamiento y distribución de WFI y PW. (Osmosis, destiladores, suavizadores, Loops de sanitización y distribución)</li>
-          <li>Control y monitoreo de sistemas HVAC y presiones diferenciales para cuartos limpios.</li>
+          <li>
+            Generación, almacenamiento y distribución de WFI y PW. (Osmosis,
+            destiladores, suavizadores, Loops de sanitización y distribución)
+          </li>
+          <li>
+            Control y monitoreo de sistemas HVAC y presiones diferenciales para
+            cuartos limpios.
+          </li>
           <li>Instrumentos de PH y Conductividad.</li>
-          <li>Control de Sistemas de solución (Secuencias de CIP, SIP, Envase, CIP de Tanques, Transvase, Aforo de Tanques, etc)</li>
-          <li>Reacondicionado de maquinaria (Blister, Estuchadoras, efajilladoras, de inspección, etc.)</li>
+          <li>
+            Control de Sistemas de solución (Secuencias de CIP, SIP, Envase, CIP
+            de Tanques, Transvase, Aforo de Tanques, etc)
+          </li>
+          <li>
+            Reacondicionado de maquinaria (Blister, Estuchadoras, efajilladoras,
+            de inspección, etc.)
+          </li>
           <li>Autoclaves de esterilización de producto.</li>
-          <li>Documentación de equipos y procesos (PNOs, diagramas eléctricos, manuales, protocolos de validación, pruebas FAT y SAT). </li>
-          <li>Sistemas de control para almacenamiento y distribución de agua (Agua Cruda, Agua Suave, Agua Helada, Agua de Torre)</li>
+          <li>
+            Documentación de equipos y procesos (PNOs, diagramas eléctricos,
+            manuales, protocolos de validación, pruebas FAT y SAT).
+          </li>
+          <li>
+            Sistemas de control para almacenamiento y distribución de agua (Agua
+            Cruda, Agua Suave, Agua Helada, Agua de Torre)
+          </li>
           <li>Control para Torres de Enfriamiento.</li>
         </ul>
       </div>
@@ -99,7 +141,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://www.elion.es/wp-content/uploads/bb-plugin/cache/farmacia-sector-2-panorama.jpg"
+          src="https://img.freepik.com/foto-gratis/cientifico-vistiendo-mono-laboratorio-medico-equipado-que-examina-descubrimiento-farmacos-micropipeta-bioquimicos-que-analizan-evolucion-virus-utilizando-vacuna-investigacion-alta-tecnologia-contra-covid19_482257-3798.jpg?w=1060&t=st=1660236727~exp=1660237327~hmac=79c40967e0f2469483f6103761165ff7ff962043eb7e7333630ec92a2f966227"
         />
       </div>
     </div>
@@ -109,10 +151,15 @@
         <h2 class="header">Agroindustria</h2>
         <ul class="cs-ul">
           <li>Control para Torres de Enfriamiento.</li>
-          <li>Medición en línea de materia prima (básculas dinámicas y verificadoras de peso)</li>
+          <li>
+            Medición en línea de materia prima (básculas dinámicas y
+            verificadoras de peso)
+          </li>
           <li>Secadores de cáscara de limón.</li>
           <li>Control remoto de posos de agua.</li>
-          <li>Sistema de control para producción de aceites (Aguacate, limón, palma, ajonjolí, etc.)
+          <li>
+            Sistema de control para producción de aceites (Aguacate, limón,
+            palma, ajonjolí, etc.)
             <ul class="cs-ul">
               <li>Molinos</li>
               <li>Decanters</li>
@@ -132,7 +179,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://www.industriaalimentaria.org/public/uploads/images/boletin%20agricultura%20tecnologica-min.png"
+          src="https://img.freepik.com/foto-gratis/tomates-maduros_1098-13004.jpg?w=996&t=st=1660236789~exp=1660237389~hmac=991b7dee2fac729fc9f3efd88bdea913d38926bcc04796d3a7af82de678c7c28"
         />
       </div>
     </div>
@@ -151,7 +198,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://www.somosindustria.com/media/img/socials/1200_port_03_22.jpg"
+          src="https://cdn.pixabay.com/photo/2020/11/23/16/51/cnc-5770325_1280.jpg"
         />
       </div>
     </div>
@@ -168,7 +215,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/HDBMI677V5BCBB6QF3C776P2TA.jpg"
+          src="https://img.freepik.com/foto-gratis/foto-carrocerias-automoviles-fabrica-linea-montaje-produccion-automoviles-industria-automotriz-moderna_645730-8.jpg?w=996&t=st=1660236983~exp=1660237583~hmac=35db204c6eaf05ec9d2da5d068b6020a99290c00e73b89223ded0cee7350d247"
         />
       </div>
     </div>
@@ -177,7 +224,10 @@
       <div class="row container">
         <h2 class="header">Automatización de edificios</h2>
         <ul class="cs-ul">
-          <li>Sistema de control para manejadoras de aire, fan&coils, extractores, ventiladores, etc.</li>
+          <li>
+            Sistema de control para manejadoras de aire, fan&coils, extractores,
+            ventiladores, etc.
+          </li>
           <li>Sistemas de bombeo</li>
           <li>Control de presión diferencial y Temperatura-Humedad.</li>
         </ul>
@@ -186,7 +236,7 @@
     <div class="parallax-container">
       <div class="parallax">
         <img
-          src="https://static.casadomo.com/media/2020/05/intesis-webinar-gratuiots-mayo-autmatizacion-edificios-portada.png"
+          src="https://img.freepik.com/foto-gratis/robots-agv-transportando-cajas-carton-centro-logistico-distribucion_41470-4652.jpg?w=1060&t=st=1660237027~exp=1660237627~hmac=c83357dbfeac1b93e3470bc1836d322b4a6fa0338315c35fe08456abef542467"
         />
       </div>
     </div>
@@ -198,6 +248,7 @@
       $(document).ready(function () {
         $(".sidenav").sidenav();
         $(".parallax").parallax();
+        $(".dropdown-trigger").dropdown();
       });
     </script>
   </body>

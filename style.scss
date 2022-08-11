@@ -180,28 +180,48 @@ nav ul a {
       -webkit-box-orient: vertical;
     }
   }
-  .box1 {
-    background-image: url("https://www.upiic.ipn.mx/assets/files/upiic/img//ProgramaAcademico/sistema-mecanico.jpg");
+  &.services{
+    .box1 {
+      background-image: url("https://www.upiic.ipn.mx/assets/files/upiic/img//ProgramaAcademico/sistema-mecanico.jpg");
+    }
+    .box2 {
+      background-image: url("https://www.autycom.com/wp-content/uploads/2019/06/programacion-plc-2.jpg");
+    }
+    .box3 {
+      background-image: url("https://www.infoplc.net/media/k2/items/cache/ca0ff09b709c98bdffbae155a7b69d0b_XL.jpg");
+    }
+    .box4 {
+      background-image: url("https://isk.com.mx/wp-content/uploads/2019/11/CONSTRUCCION-DE-TABLEROS-ELECTRICOS.jpeg");
+    }
+    .box5 {
+      background-image: url("https://www.cablesyconectoreshoy.com/imagenes/2016/03/Brady-labelled-cables.jpg");
+    }
+    .box6 {
+      background-image: url("https://img77.uenicdn.com/image/upload/v1592563639/business/d204f992-6676-48eb-978e-1476687420cf.jpg");
+    }
+    .box7 {
+      background-image: url("https://concepto.de/wp-content/uploads/2021/06/mantenimiento-correctivo-preventivo-e1622737424937.jpg");
+    }
   }
-  .box2 {
-    background-image: url("https://www.autycom.com/wp-content/uploads/2019/06/programacion-plc-2.jpg");
-  }
-  .box3 {
-    background-image: url("https://www.infoplc.net/media/k2/items/cache/ca0ff09b709c98bdffbae155a7b69d0b_XL.jpg");
-  }
-  .box4 {
-    background-image: url("https://isk.com.mx/wp-content/uploads/2019/11/CONSTRUCCION-DE-TABLEROS-ELECTRICOS.jpeg");
-  }
-  .box5 {
-    background-image: url("https://www.cablesyconectoreshoy.com/imagenes/2016/03/Brady-labelled-cables.jpg");
-  }
-  .box6 {
-    background-image: url("https://img77.uenicdn.com/image/upload/v1592563639/business/d204f992-6676-48eb-978e-1476687420cf.jpg");
-  }
-  .box7 {
-    background-image: url("https://concepto.de/wp-content/uploads/2021/06/mantenimiento-correctivo-preventivo-e1622737424937.jpg");
+  &.proyects{
+    .box1 {
+      background-image: url("https://images.pexels.com/photos/2760242/pexels-photo-2760242.jpeg");
+    }
+    .box2 {
+      background-image: url("https://images.pexels.com/photos/2569839/pexels-photo-2569839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .box3 {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/19/Libro-sistemas-scada-3ra-ed-mecatronica-automatizacion-22680-MLM20234441553_012015-F.jpg");
+    }
+    .box4 {
+      background-image: url("https://images.pexels.com/photos/1334644/pexels-photo-1334644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    .box5 {
+      background-image: url("https://images.pexels.com/photos/7663138/pexels-photo-7663138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
   }
 }
+
 .cs-ul {
   padding-left: 2rem !important;
   list-style-type: disc !important;
@@ -218,5 +238,26 @@ nav ul a {
       }
     }
   }
+}
+.fs3{
+  font-size: 1.5rem;
+}
+.f-left{
+  float: left
+}
+.fa-solid{
+  font-size: 1.2rem;
+  @media (max-width: 992px) {
+    color: white !important;
+  }
+}
+.fa-solid.fa-caret-down{
+  margin-right: 7px
+}
+.dropdown-content li > a > i, .sidenav li > a > i {
+  margin: 0 !important;
+}
+#sectors-dropdown{
+  width: max-content !important;
 }
 @import "node_modules/materialize-css/sass/materialize.scss";

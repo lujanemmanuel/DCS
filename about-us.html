@@ -8,41 +8,65 @@
   <title>DCS | Nosotros</title>
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+  <ul id="sectors-dropdown" class="dropdown-content">
+    <li><a href="sectors.html#alimenticio"><i class="fa-solid fa-utensils"></i> Alimenticio</a></li>
+    <li><a href="sectors.html#farmaceutico"><i class="fa-solid fa-pills"></i> Farmaceutico</a></li>
+    <li><a href="sectors.html#agroindustria"><i class="fa-solid fa-seedling"></i> Agroindustria</a></li>
+    <li><a href="sectors.html#Metalmecanica"><i class="fa-solid fa-toolbox"></i> Metalmecanica</a></li>
+    <li><a href="sectors.html#automotriz"><i class="fa-solid fa-car"></i> Automotriz</a></li>
+    <li><a href="sectors.html#edificios"><i class="fa-solid fa-building-circle-check"></i> Automatización de edificios</a></li>
+  </ul>
+  <ul id="sectors-dropdown-mobile" class="dropdown-content dark-midnight-blue">
+    <li><a class="white-text" href="sectors.html#alimenticio"><i class="fa-solid fa-utensils"></i> Alimenticio</a></li>
+    <li><a class="white-text" href="sectors.html#farmaceutico"><i class="fa-solid fa-pills"></i> Farmaceutico</a></li>
+    <li><a class="white-text" href="sectors.html#agroindustria"><i class="fa-solid fa-seedling"></i> Agroindustria</a></li>
+    <li><a class="white-text" href="sectors.html#Metalmecanica"><i class="fa-solid fa-toolbox"></i> Metalmecanica</a></li>
+    <li><a class="white-text" href="sectors.html#automotriz"><i class="fa-solid fa-car"></i> Automotriz</a></li>
+    <li><a class="white-text" href="sectors.html#edificios"><i class="fa-solid fa-building-circle-check"></i> Automatización de edificios</a></li>
+  </ul>
   <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper cornflower">
+      <div class="nav-wrapper cornflower black-text">
         <a href="#" class="brand-logo">
-          <img src="assets/logo-1.png" alt="" width="70" />
+          <img src="assets/logo-1.png" alt="" width="70">
         </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Inicio</a></li>
-          <li class="active"><a href="about-us.html">Nosotros</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="products.html">Productos</a></li>
-          <li><a href="sectors.html">Sectores</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+          <li class="active"><a href="about-us.html"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-people-carry-box"></i> Servicios</a></li>
+          <li><a href="proyects.html"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+          <li><a href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Productos</a></li>
+          <li><a class="dropdown-trigger" id="dropdown-trigger" href="#!" data-target="sectors-dropdown"><i class="fa-solid fa-industry"></i> Sectores <i class="fa-solid fa-caret-down"></i></a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-file-signature"></i> Contacto</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Inicio</a></li>
-    <li class="active"><a href="about-us.html">Nosotros</a></li>
-    <li><a href="services.html">Servicios</a></li>
-    <li><a href="products.html">Productos</a></li>
-    <li><a href="sectors.html">Sectores</a></li>
-    <li><a href="contact.html">Contacto</a></li>
+  <ul class="sidenav midnight-blue" id="mobile-demo">
+    <li><a class="white-text" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+    <li class="active"><a class="white-text" href="about-us.html"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
+    <li><a class="white-text" href="services.html"><i class="fa-solid fa-people-carry-box"></i> Servicios</a></li>
+    <li><a class="white-text" href="proyects.html"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+    <li><a class="white-text" href="products.html"><i class="fa-solid fa-boxes-stacked"></i> Productos</a></li>
+    <li><a class="dropdown-trigger white-text" id="dropdown-mobile" href="#!" data-target="sectors-dropdown-mobile"><i class="fa-solid fa-industry"></i> Sectores <i class="fa-solid fa-caret-down"></i></a></li>
+    <li><a class="white-text" href="contact.html"><i class="fa-solid fa-file-signature"></i> Contacto</a></li>
   </ul>
   <section>
     <div class="container">
       <h3 class="center-align">Filosofía</h3>
       <div class="row">
-        <div class="col s12 m8">
+        <div class="col s12 m8 fs3">
           <p>
             Somos una empresa dedicada al diseño de soluciones instrumentadas
             de control y automatización, así como servicios de mantenimiento
@@ -77,7 +101,7 @@
         <h3 class="header center-align">Nuestra misión</h3>
         <div class="card horizontal">
           <div class="card-stacked">
-            <div class="card-content">
+            <div class="card-content fs3">
               <p>Brindar soluciones integrales, modulares y escalables para la mejora de procesos, 
                 optimización de recursos energéticos y aumentar la eficiencia en producción y 
                 manufactura de productos en sectores.</p>
@@ -93,7 +117,7 @@
         <h3 class="header center-align">Nuestra visión</h3>
         <div class="card horizontal">
           <div class="card-stacked">
-            <div class="card-content">
+            <div class="card-content fs3">
               <p> En años próximos, consolidar nuestra compañía a ser la más destacada en el 
                 sector de automatización en la ciudad de Guadalajara, Jalisco, México anticipando 
                 las necesidades y expectativas de nuestros clientes, así́ como ser punteros en 
@@ -117,9 +141,9 @@
       <div class="col s12 valor">
         <div class="card valor-margin" data-aos="zoom-in-right">
           <div class="card-content">
-            <h5 class="center-align">
+            <h4 class="center-align">
               Honestidad
-            </h5>
+            </h4>
           </div>
         </div>
         <div class="image-valor-margin" data-aos="flip-right">
@@ -132,18 +156,18 @@
         </div>
         <div class="card valor-margin ord-1" data-aos="zoom-in-left">
           <div class="card-content">
-            <h5 class="center-align">
+            <h4 class="center-align">
               Compromiso
-            </h5>
+            </h4>
           </div>
         </div>
       </div>
       <div class="col s12 valor">
         <div class="card valor-margin" data-aos="zoom-in-right">
           <div class="card-content">
-            <h5 class="center-align">
+            <h4 class="center-align">
               Respeto
-            </h5>
+            </h4>
           </div>
         </div>
         <div class="image-valor-margin ord-2" data-aos="flip-right">
@@ -156,18 +180,18 @@
         </div>
         <div class="card valor-margin" data-aos="zoom-in-left">
           <div class="card-content">
-            <h5 class="center-align">
+            <h4 class="center-align">
               Disciplina
-            </h5>
+            </h4>
           </div>
         </div>
       </div>
       <div class="col s12 valor">
         <div class="card valor-margin" data-aos="zoom-in-right">
           <div class="card-content">
-            <h5 class="center-align">
+            <h4 class="center-align">
               Conocimiento
-            </h5>
+            </h4>
           </div>
         </div>
         <div class="image-valor-margin" data-aos="flip-right">
@@ -185,6 +209,7 @@
   <script>
     $(document).ready(function () {
       $(".sidenav").sidenav();
+      $(".dropdown-trigger").dropdown();
     });
   </script>
 </body>
